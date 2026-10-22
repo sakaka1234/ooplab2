@@ -55,6 +55,8 @@ public class Book {
 
     @Override
     public String toString() {
+
+
         return "Book{" +
                 "name='" + name + '\'' +
                 ", authors=" + Arrays.toString(authors) +
@@ -63,10 +65,11 @@ public class Book {
                 '}';
     }
 
-    public String getAuthorNames(){
+    public String  getAuthorNames(){
         String s = "";
         for (Author a : authors) {
             s += a.getName() + " ,";
+
         }
         return s;
     }
